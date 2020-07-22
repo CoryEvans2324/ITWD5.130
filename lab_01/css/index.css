@@ -1,0 +1,54 @@
+h1 {
+	text-align: center;
+	color: black;
+}
+h2 {
+	text-align: center;
+	color: blue;
+}
+h3 {
+	text-align: left;
+	color: #003366;
+	font-weight: bold;
+	background-color: yellow;
+	display: inline;
+}
+
+.align-center {
+	text-align: center;
+}
+
+.description {
+	text-align: justify;
+	color: black;
+	font-weight: normal;
+	font-size: 15px;
+}
+.description-table {
+	width: 100%;
+	border: 1px solid blue;
+	border-collapse: collapse;
+	background-color: #a2b5cd;
+	font-size: 15px;
+	font-weight: normal;
+}
+.description-table tr {
+	color: darkblue;
+}
+.description-table td {
+	border: 1px solid blue;
+}
+
+.custom-table {
+	border-collapse: collapse;
+	width: 100%;
+}
+.custom-table td,
+.custom-table th {
+	border: 2px solid blue;
+}
+.custom-table th {
+	color: darkblue;
+	font-weight: bold;
+	background-color: #f4b083;
+}

@@ -1,0 +1,64 @@
+body {
+	background: linear-gradient(180deg, rgb(203, 218, 245), white);
+	font-family: 'Courier New', Helvetica, sans-serif;
+}
+
+h1 {
+	text-align: center;
+	color: black;
+}
+h2 {
+	text-align: center;
+	color: blue;
+}
+h3 {
+	text-align: left;
+	color: #003366;
+	font-weight: bold;
+	background-color: yellow;
+	display: inline;
+}
+
+table {
+	border-collapse: collapse;
+	border: 1px solid black;
+	width: 100%;
+}
+th, td {
+	border: 2px solid;
+}
+
+.align-center {
+	text-align: center;
+}
+
+.description {
+	text-align: justify;
+	color: black;
+	font-weight: normal;
+	font-size: 15px;
+}
+.description-table {
+	border-color: blue;
+	background-color: #a2b5cd;
+	font-size: 15px;
+	font-weight: normal;
+}
+.description-table tr {
+	color: darkblue;
+}
+
+.description-table td,
+.custom-table td,
+.custom-table th {
+	border-color: blue;
+}
+.custom-table th {
+	color: darkblue;
+	font-weight: bold;
+	background-color: #f4b083;
+}
+
+.svg-table th {
+	background-color: yellow;
+}
