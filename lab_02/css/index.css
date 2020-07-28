@@ -59,6 +59,24 @@ th, td {
 	background-color: #f4b083;
 }
 
+.components-table td:nth-child(2),
+.components-table td:nth-child(5) {
+	text-align: center;
+}
+
 .svg-table th {
 	background-color: yellow;
+}
+
+.white-background {
+	background-color: white;
+}
+
+.important {
+	text-decoration: underline;
+	color: red;
+}
+
+.red-color {
+	color: red;
 }
