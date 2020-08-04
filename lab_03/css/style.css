@@ -11,14 +11,14 @@ body {
 
 header {
 	background-color: #d64161;
-    padding: 10px 10px 10px 10px;
+	padding: 10px 10px 10px 10px;
 
-    height: 20vh;
-    width: 100vw;
+	height: 20vh;
+	width: 100vw;
 
-    /* Align content to center */
-    display: table-cell;
-    vertical-align: middle;
+	/* Align content to center */
+	display: table-cell;
+	vertical-align: middle;
 }
 
 nav {
@@ -51,45 +51,45 @@ nav ul li a {
 	background-color: #4caf50;
 }
 nav ul li a:hover:not(.active) {
-    background-color: #111111;
+	background-color: #111111;
 }
 
 main {
-    /* background-color: #feb236; */
+	/* background-color: #feb236; */
 }
 
 main section {
-    /* border: 3px solid #4caf50; */
-    padding: 5px;
-    margin: 20px auto;
-    width: 95%;
-    border-radius: 10px;
-    background-color: lightgray;
-    box-shadow: 5px 5px rgb(163, 163, 163);
+	/* border: 3px solid #4caf50; */
+	padding: 5px;
+	margin: 20px auto;
+	width: 95%;
+	border-radius: 10px;
+	background-color: lightgray;
+	box-shadow: 5px 5px rgb(163, 163, 163);
 }
 
 main section img {
-    width: 200px;
-    height: 170px;
-    margin-left: 15px;
-    margin-right: 10px;
-    float: left;
+	width: 200px;
+	height: 170px;
+	margin-left: 15px;
+	margin-right: 10px;
+	float: left;
 }
 
 .float_section::after {
-    content: "";
-    clear: both;
-    display: block;
+	content: "";
+	clear: both;
+	display: block;
 }
 
 footer {
 	background-color: #429b4c;
 	text-align: center;
-    padding: 10px 10px 10px 10px;
-    position: absolute;
-    bottom: 0;
+	padding: 10px 10px 10px 10px;
+	position: absolute;
+	bottom: 0;
 
-    width: 100vw;
+	width: 100vw;
 }
 
 h1,
@@ -100,7 +100,7 @@ h2 {
 
 h3,
 h4 {
-    margin: 15px, 10px;
+	margin: 15px, 10px;
 }
 
 p {
