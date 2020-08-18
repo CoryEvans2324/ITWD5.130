@@ -50,7 +50,7 @@ nav ul li a {
 	text-decoration: none;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 720px) {
 	nav ul li {
 		float: none;
 	}
