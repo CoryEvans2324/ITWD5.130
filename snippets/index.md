@@ -1,3 +1,3 @@
-# Snippets
+## Snippets
 
-[forms](/snippets/form/index.html)
+[forms](form/index.html)
