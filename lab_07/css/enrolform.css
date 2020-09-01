@@ -1,0 +1,110 @@
+
+.content {
+	width: 98vw;
+	margin: 0 auto;
+
+	min-width: 350px;
+	max-width: 900px;
+}
+
+.form {
+	margin: 1em auto;
+
+	padding: 1em;
+	background-color: white;
+	border-radius: 1em;
+}
+
+.field {
+	display: block;
+	grid-column: span all;
+}
+
+.field label,
+.field select,
+.field input,
+.field textarea,
+.field button {
+	width: 100%;
+}
+
+.field button {
+	height: 4em;
+	background-color: rgb(86, 255, 86);
+	border: none;
+	border-radius: 1em;
+
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+.field button + button {
+	margin-top: 1em;
+}
+
+button[type=reset] {
+	background-color: orange;
+}
+
+button:hover {
+	cursor: pointer;
+}
+
+.field-set input {
+	width: auto;
+	margin-left: 1em;
+	margin-right: .5em;
+}
+
+/* GRID INFO */
+
+.form form {
+	display: grid;
+	grid-gap: 1em;
+	grid-template-columns: auto;
+}
+
+.field-set {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+}
+
+@media (min-width: 500px) {
+	.field-set {
+		grid-template-columns: repeat(3, 1fr);
+	}
+}
+
+@media (min-width: 600px) {
+	.field-set {
+		grid-template-columns: repeat(4, 1fr);
+	}
+
+	.form form {
+		grid-template-columns: repeat(2, 1fr);
+		grid-template-areas:
+		"first-name last-name"
+		"student-id student-id"
+		"email email"
+		"domestic domestic"
+		"gender year"
+		"papers papers"
+		"request request"
+		"date ."
+		"reset submit"
+		;
+	}
+
+	.field-first-name { grid-area: first-name; }
+	.field-last-name { grid-area: last-name; }
+	.field-student-id { grid-area: student-id; }
+	.field-email { grid-area: email; }
+	.field-domestic { grid-area: domestic; }
+	.field-gender { grid-area: gender; }
+	.field-year { grid-area: year; }
+	.field-papers { grid-area: papers; }
+	.field-request { grid-area: request; }
+	.field-date { grid-area: date; }
+	.field-submit { grid-area: submit; }
+	.field-reset { grid-area: reset; }
+}

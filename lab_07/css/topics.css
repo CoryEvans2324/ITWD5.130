@@ -1,0 +1,29 @@
+.row {
+	display: -webkit-flex;
+	display: flex;
+}
+
+.column {
+	-webkit-flex: 1;
+	-ms-flex: 1;
+	flex: 1;
+	padding: 10px;
+	height: auto;
+
+	text-align: center;
+}
+
+.content {
+	background-color: white;
+	border: 2px solid green;
+	border-radius: 20px;
+
+	padding: 30px;
+	margin: 30px;
+}
+
+@media (max-width: 900px) {
+	.row {
+		flex-direction: column;
+	}
+}
