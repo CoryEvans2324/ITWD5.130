@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>JS</title>
+
+	<script src="js/exercise-1.js"></script>
+
+	<style>
+		.field {
+			margin: 1rem 0;
+			display: block;
+		}
+
+		label {
+			width: 100px;
+			display: inline-block;
+		}
+	</style>
+</head>
+<body>
+	<section>
+		<h1>Exercise 1: Temperature Converter</h1>
+		<p>Type a value into the Fahrenheit field to convert the value to Celcius</p>
+		<div class="field">
+			<label for="input-fahrenheit">Fahrenheit</label>
+			<input type="text" name="input-fahrenheit" id="input-fahrenheit">
+			<input type="button" value="Convert" onclick="convert_fahrenheit();">
+		</div>
+		<div class="field">
+			<label for="input-celcius">Celcius</label>
+			<input type="text" name="input-celcius" id="input-celcius">
+			<input type="button" value="Convert" onclick="convert_celcius();">
+		</div>
+		<div class="field">
+			<label for="input-kelvin">Kelvin</label>
+			<input type="text" name="input-kelvin" id="input-kelvin">
+			<input type="button" value="Convert" onclick="convert_kelvin();">
+		</div>
+	</section>
+</body>
+</html>
