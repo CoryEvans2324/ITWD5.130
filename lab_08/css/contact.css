@@ -1,0 +1,12 @@
+.content {
+	width: 60vw;
+	margin: 30px auto;
+}
+
+.content .map {
+}
+
+.content .map iframe {
+	display: block;
+	margin: 0 auto;
+}

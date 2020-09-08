@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>ITWD5.130</title>
+
+		<link rel="stylesheet" href="css/style.css" />
+	</head>
+	<body>
+		<header>
+			<!-- Header area -->
+			<h1 style="color: red;">ITWD5.130</h1>
+			<h2 style="color: red;">Design web page layout with css</h2>
+		</header>
+
+		<nav>
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="photo-gallery.html">Photo Gallery</a></li>
+				<li><a href="topics.html">Topics</a></li>
+				<li><a href="enrolform.html">Enrolment Form</a></li>
+				<li><a href="contact.html">Contact</a></li>
+				<li><a href="flip-box.html">Flip Box</a></li>
+				<li><a href="timeline.html">Timeline</a></li>
+				<li class="dropdown"><a href="javascript.html" class="active">Javascript</a>
+					<ul>
+						<li><a href="javascript.html" class="active">Javascript1</a></li>
+						<li><a href="javascript.html">Javascript2</a></li>
+						<li><a href="javascript.html">Javascript3</a></li>
+					</ul>
+				</li>
+			</ul>
+		</nav>
+
+		<main>
+			<section>
+				<h1>Javascript: Programming Language for the Web</h1>
+				<p>Enter your name and then click a button to show the welcome message.</p>
+				<form name="hello_message">
+					<input type="text" placeholder="Enter your name" name="name" id="input-name">
+					<input type="button" value="Click me" onclick="name_click();">
+				</form>
+
+				<p id="hello-message"></p>
+
+				<script>
+					function name_click() {
+						const name = document.getElementById('input-name').value;
+						document.getElementById('hello-message').innerText = 'Hello ' + name;
+					}
+				</script>
+
+				<br><br><br>
+				<p>Calculate GST</p>
+				<form name="gst_calculator">
+					<input type="number" name="gstnumber" id="input-amount">
+					<input type="button" value="Calculate GST" onclick="calculate_gst();">
+				</form>
+
+				<p id="gst-value"></p>
+
+				<script>
+					function calculate_gst() {
+					var v = document.getElementById('input-amount').value;
+					var output = 'GST is $' + (0.15 * v).toFixed(2);
+
+					document.getElementById('gst-value').innerText = output;
+				}
+
+				</script>
+
+			</section>
+
+			<section>
+				<h1>Change & Update HTML content and CSS style</h1>
+				<p>Chnage color, change text, hide or show an element</p>
+
+				<p style="font-size: large;" id="paper-title">ITWD5.130 Website Development</p>
+				<button onclick="change_color();">Change color</button>
+				<button onclick="change_text();">Change text</button>
+				<button onclick="show_paper_title();">Show</button>
+				<button onclick="hide_paper_title();">Hide</button>
+				<script>
+					function generate_random(range) {
+						return Math.floor(Math.random() * range);
+					}
+
+					function change_color () {
+						var el = document.getElementById('paper-title');
+						const color = {
+							r: generate_random(255),
+							g: generate_random(255),
+							b: generate_random(255)
+						}
+						el.style.color = 'rgb(' + color.r + ',' + color.g + ',' + color.b + ')';
+					}
+
+					function change_text () {
+						var el = document.getElementById('paper-title');
+						el.innerHTML = 'ITDB6.208: Database Management';
+					}
+
+					function show_paper_title () {
+						var el = document.getElementById('paper-title');
+						el.style.display = 'block';
+					}
+
+					function hide_paper_title () {
+						var el = document.getElementById('paper-title');
+						el.style.display = 'none'
+					}
+
+					setInterval(change_color, 100);
+				</script>
+
+				<br><br>
+				<div id="yin-yang"></div>
+				<button onclick="document.getElementById('yin-yang').style.display = 'block'">Show</button>
+				<button onclick="document.getElementById('yin-yang').style.display = 'none';">Hide</button>
+			</section>
+
+			<section style="height: 200px;">
+				<img width="100px" height="150px" src="images/bulboff.png" alt="bulb" id="bulb">
+				<br>
+				<button onclick="document.getElementById('bulb').src = 'images/bulbon.png'">ON</button>
+				<button onclick="document.getElementById('bulb').src = 'images/bulboff.png'">OFF</button>
+			</section>
+		</main>
+
+		<footer>
+			Created by: Cory Evans <br />
+			Contact me at: <a href="mailto:cory0x45@gmail.com">cory0x45@gmail.com</a>
+		</footer>
+	</body>
+</html>
