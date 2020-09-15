@@ -8,5 +8,7 @@
 + [lab 5](/lab_05/index.html)
 + [lab 6](/lab_06/index.html)
 + [lab 7](/lab_07/index.html)
++ [lab 8](/lab_08/index.html)
++ [lab 9](/lab_09/index.html)
 
 ### [Custom Snippets](/snippets/index.md)
