@@ -1,0 +1,43 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	width: 800px;
+	margin: 20px auto;
+}
+
+.content {
+	border: 1px solid black;
+}
+
+.slideshow-header {
+	text-align: center;
+}
+
+.slideshow {
+	position: relative;
+}
+
+.slideshow img {
+	width: 100%;
+}
+
+.arrow {
+	position: absolute;
+	color: white;
+	font-weight: 900;
+	font-size: 48px;
+	top: 50%;
+	transform: translate(0%, -50%);
+}
+
+.arrow:hover {
+	cursor: pointer;
+}
+
+.right-arrow {
+	right: 0;
+}
