@@ -7,6 +7,8 @@
 
 	<link rel="stylesheet" href="css/index.css">
 	<script defer src="js/index.js"></script>
+	<script defer src="js/video.js"></script>
+	<script defer src="js/audio.js"></script>
 </head>
 <body>
 	<div class="content">
@@ -16,11 +18,38 @@
 
 		<div class="slideshow">
 			<img id="main-image" src="images/img_5terre_wide.jpg" alt="">
-			<div class="arrow left-arrow" onclick="move_index(-1);">
+			<div id="left-arrow" class="arrow left-arrow" onclick="move_index(-1);">
 				&#128896;
 			</div>
-			<div class="arrow right-arrow" onclick="move_index(1);">
+			<div id="right-arrow" class="arrow right-arrow" onclick="move_index(1);">
 				&#128898;
+			</div>
+		</div>
+
+		<div class="slideshow-footer">
+			<p id="slideshow-caption">Terraces</p>
+		</div>
+
+		<div class="video">
+			<video width="420px" id="video" controls>
+				<source src="video/mov_bbb.mp4" type="video/mp4">
+				Your browser does not support the video tag.
+			</video>
+			<div class="video-controls">
+				<button onclick="play_pause();">Play/Pause</button>
+				<button onclick="make_big();">Big</button>
+				<button onclick="make_small();">Small</button>
+				<button onclick="make_normal();">Normal</button>
+			</div>
+		</div>
+
+		<div class="audio">
+			<audio id="audio" controls>
+				<source src="audio/horse.ogg" type="audio/ogg">
+			</audio>
+			<div class="audio-controls">
+				<button onclick="document.getElementById('audio').play();">Play</button>
+				<button onclick="document.getElementById('audio').pause();">Pause</button>
 			</div>
 		</div>
 	</div>

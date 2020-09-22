@@ -1,12 +1,13 @@
-
 var img = document.getElementById('main-image');
+var img_caption = document.getElementById('slideshow-caption');
+
 const images = [
-	"images/img_5terre_wide.jpg",
-	"images/img_lights_wide.jpg",
-	"images/img_mountains_wide.jpg",
-	"images/img_nature_wide.jpg",
-	"images/img_snow_wide.jpg",
-	"images/img_woods_wide.jpg"
+	{src: "images/img_5terre_wide.jpg", caption: "Terraces"},
+	{src: "images/img_lights_wide.jpg", caption: "Northern Lights"},
+	{src: "images/img_mountains_wide.jpg", caption: "Mountains with valley"},
+	{src: "images/img_nature_wide.jpg", caption: "Clifface"},
+	{src: "images/img_snow_wide.jpg", caption: "Snowy mountains"},
+	{src: "images/img_woods_wide.jpg", caption: "Into the woods"}
 ];
 var current_index = 0;
 
@@ -26,6 +27,16 @@ function move_index(offset)
 
 function set_image(index)
 {
-	const src = images[index];
+	const src = images[index].src;
 	img.attributes.src.value = src;
+
+	const caption = images[index].caption;
+	img_caption.innerText = caption;
+
 }
+
+
+// setInterval(
+// 	() => { move_index(1); },
+// 	2000
+// );

@@ -25,6 +25,10 @@ body {
 	width: 100%;
 }
 
+.slideshow-footer {
+	text-align: center;
+}
+
 .arrow {
 	position: absolute;
 	color: white;
@@ -40,4 +44,24 @@ body {
 
 .right-arrow {
 	right: 0;
+}
+
+
+.video,
+.audio {
+	padding-top: 20px;
+	text-align: center;
+}
+
+.video button,
+.audio button {
+	/* width: 120px; */
+	background-color: green;
+
+	color: white;
+	text-transform: uppercase;
+	padding: 1em 2em;
+
+	border: 1px solid black;
+	border-radius: 1em;
 }
